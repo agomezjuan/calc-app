@@ -1,0 +1,10 @@
+<script src='https://www.google.com/recaptcha/api.js?render=CLAVE_SITIO_WEB'> 
+</script>
+<script>
+    grecaptcha.ready(function() {
+    grecaptcha.execute(6LcCXO4aAAAAACkwlebgTtgS_ACP8-EzC2f3iTh-, {action: 'formulario'})
+    .then(function(token) {
+    var recaptchaResponse = document.getElementById('recaptchaResponse');
+    recaptchaResponse.value = token;
+    });});
+</script>
